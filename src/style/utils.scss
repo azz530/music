@@ -1,0 +1,246 @@
+
+
+//背景颜色
+.bg-main{
+	background-color: $main-color !important;
+}
+
+.bg-main-deep{
+	background-color: $main-color-deep !important;
+}
+.bg-main-light{
+	background-color: $main-color-light !important;
+}
+.bg-themen-color{
+	background-color: $themen-color !important;
+}
+
+.bg-white {
+    background-color: $bg-color !important;
+}
+
+.bg-black {
+    background-color: black !important;
+}
+
+.bg-grey {
+    background-color: $bg-color-grey !important;
+}
+
+.fw-b{
+	font-weight: bold;
+}
+
+// 文字对齐
+.tl {
+    text-align: left;
+}
+
+.tc {
+    text-align: center;
+}
+
+.tr {
+    text-align: right;
+}
+
+// 显示
+.dn {
+    display: none;
+}
+
+.di {
+    display: inline;
+}
+
+.db {
+    display: block;
+}
+
+.dib {
+    display: inline-block;
+}
+
+//弹性布局
+.df{
+	display: flex;
+}
+
+.df-row{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.fdc{
+	flex-direction: column;
+}
+.jc-sb{
+	justify-content: space-between;
+}
+.jc-sa{
+	justify-content: space-around;
+}
+.jc-c{
+	justify-content: center;
+}
+.jc-e{
+	justify-content: flex-end;
+}
+.ai-c{
+	align-items: center;
+}
+.ai-e{
+	align-items: flex-end;
+}
+.ai-s {
+	align-items: flex-start;
+}
+.as-c{
+	align-self: center;
+}
+.fww{
+	flex-wrap: wrap;
+}
+
+.flex-1{
+	flex: 1;
+}
+.flex-2{
+	flex: 2;
+}
+.flex-3{
+	flex: 3;
+}
+.flex-4{
+	flex: 4;
+}
+.flex-5{
+	flex: 5;
+}
+
+// 定位
+.pr {
+    position: relative;
+}
+
+.pa {
+    position: absolute;
+}
+
+.pf {
+    position: fixed;
+}
+// 浮动
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+//边框
+.bd{
+	border:1px solid $border-color;
+}
+
+.bd-b{
+	border-bottom: 1px solid $border-color;
+}
+
+.bd-t{
+	border-top: 1px solid $border-color;
+}
+
+//阴影
+.bs{
+	box-shadow: 0 0 2px $text-light-grey;
+}
+
+//圆角
+.br-10{
+	border-radius:10px ;
+}
+.br-5{
+	border-radius:5px ;
+}
+.opacity6 {
+	opacity: 0.6;
+}
+
+// 按钮禁用
+.disabled {
+    outline: 0 none;
+    cursor: default !important;
+    opacity: .3;
+    filter: alpha(opacity=30);
+    -ms-pointer-events: none;
+    pointer-events: none;
+}
+
+.hover{
+	&:hover{
+		opacity: .8;
+    filter: alpha(opacity=80);
+	}
+	
+}
+
+.cp{
+	cursor: pointer;
+}
+
+.wb-ba{
+	word-break:break-all
+}
+
+.p-ellipsis{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.of-h {
+	overflow: hidden;
+}
+.height-p100 {
+  height: 100%;
+}
+.height-auto {
+	height: auto !important;
+}
+.width-p100 {
+	width: 100%;
+}
+// 阴影
+.bs-common {
+	box-shadow: 0px 2px 3px rgba(20, 50, 80, 0.12);
+}
+
+.no-shadow {
+	box-shadow: none !important;
+}
+
+.va-m {
+	vertical-align: middle;
+}
+.el-tabs--card>.el-tabs__header .el-tabs__item{
+	// width: 94px;
+	margin: 0 !important;
+	padding: 0 20px !important;
+}
+.el-tabs__item{
+	margin: 0 !important;
+	padding: 0 20px !important;
+}
+.el-notification__content{
+	cursor: pointer;
+}
+.marg-b{
+	margin-bottom: 10px;
+}
+
+.el-table th.el-table__cell.is-leaf,
+.el-table td.el-table__cell{
+	text-align: center;
+}

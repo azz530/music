@@ -1,0 +1,93 @@
+// 主体背景色
+$main-color:#1C1C42;
+$main-color-deep:#08224D;
+$main-color-light:#313D63;
+$themen-color:#223366;
+
+/* 行为相关颜色 */
+$color-primary: #2F73EA;
+$color-success: #00B42A;
+$color-warning: #FFB31B;
+$color-error: #dd524d;
+$color-default:#909399;
+$behavior:(
+  primary:$color-primary,
+  success:$color-success,
+  warning:$color-warning,
+  error:$color-error,
+  default:$color-default
+);
+
+/* 文字基本颜色 */
+$text-balck:#000000;
+$text-color:#333333;//基本色
+$text-color-dim-gray:#696969;
+$text-color-gray: #808080;
+$text-color-dark-gray:#A9A9A9;
+$text-color-silver:#c0c0c0;
+$text-light-grey:#d3d3d3;
+$text-dark-white:#e6e6e6;
+$text-white:#ffffff;
+$text-dark: #26334A;
+
+/* 文章场景相关 */
+$title-title: #2C405A; // 文章标题颜色
+$title-subtitle: #555555; // 二级标题颜色
+
+$text-colors:(
+dark: $text-dark,
+balck:$text-balck,
+color:$text-color,
+color-dim-gray:$text-color-dim-gray,
+color-gray:$text-color-gray,
+color-dark-gray:$text-color-dark-gray,
+color-silver:$text-color-silver,
+light-grey:$text-light-grey,
+dark-white:$text-dark-white,
+white:$text-white,
+title:$title-title,
+subtitle:$title-subtitle,
+main:$main-color,
+main-deep:$main-color-deep,
+main-light:$main-color-light,
+);
+
+
+/* 背景颜色 */
+$bg-color:#ffffff;
+$bg-color-grey:#f8f8f8;
+$bg-color-mask:rgba(0, 0, 0, 0.4);//遮罩颜色
+
+/* 边框颜色 */
+$border-color:#dddddd;
+
+// sidebar
+$menuText:#bfcbd9;
+$menuActiveText:#409EFF;
+$subMenuActiveText:#f4f4f5; //https://github.com/ElemeFE/element/issues/12951
+
+$menuBg:#304156;
+$menuHover:#263445;
+
+$subMenuBg:#1f2d3d;
+$subMenuHover:#001528;
+
+$sideBarWidth: 300px;
+$navbarHeight: 90px;
+$tagListHeight: 60px;
+
+$sideBarBg: #26334A;
+$navbarBg: #2F73EA;
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  menuText: $menuText;
+  menuActiveText: $menuActiveText;
+  subMenuActiveText: $subMenuActiveText;
+  menuBg: $menuBg;
+  menuHover: $menuHover;
+  subMenuBg: $subMenuBg;
+  subMenuHover: $subMenuHover;
+  sideBarWidth: $sideBarWidth;
+}

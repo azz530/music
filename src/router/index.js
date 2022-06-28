@@ -1,33 +1,37 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import Vue from "vue";
+import VueRouter from "vue-router";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
-    {
-      path:'/login',
-      component:()=>import('@/pages/common/Login.vue'),
-      hidden:true,
-    },
-    {
-      path:'/register',
-      component:()=>import('@/pages/common/Register.vue'),
-      hidden:true,
-    },
-    {
-      path:'/findPsw',
-      component:()=>import('@/pages/common/FindPsw.vue'),
-      hidden:true,
-    },
-    {
-      path:'/home',
-      component:()=>import('@/pages/Home.vue'),
-      hidden:true,
-    },
-]
+  {
+    path: "/",
+    redirect: "/login",
+  },
+  {
+    path: "/login",
+    component: () => import("@/pages/common/Login.vue"),
+    hidden: true,
+  },
+  {
+    path: "/register",
+    component: () => import("@/pages/common/Register.vue"),
+    hidden: true,
+  },
+  {
+    path: "/findPsw",
+    component: () => import("@/pages/common/FindPsw.vue"),
+    hidden: true,
+  },
+  {
+    path: "/home",
+    component: () => import("@/pages/Home.vue"),
+    hidden: true,
+  },
+];
 
 const router = new VueRouter({
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;
